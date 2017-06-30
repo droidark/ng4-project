@@ -1,3 +1,9 @@
-<p>
-  recipe-item works!
-</p>
+<div class="card" (click)="selectRecipeItem(recipe)">
+  <div class="card-block">
+    <h4 class="card-title">{{recipe.name}}</h4>
+    <p class="card-text">{{recipe.description}}
+      <img class="float-right" [src]="recipe.imagePath" [alt]="recipe.name"
+      style="max-height:50px">
+    </p>
+  </div>
+</div>
