@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-5">
-    <app-recipe-list (selectRecipe)="importRecipe = $event"></app-recipe-list>
+    <app-recipe-list></app-recipe-list>
   </div>
   <div class="col-md-7">
     <app-recipe-detail *ngIf="importRecipe; else infoText" [inRecipe]="importRecipe"></app-recipe-detail>

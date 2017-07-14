@@ -6,9 +6,8 @@
 <hr>
 <div class="row">
   <div class="col-xl-12">
-    <app-recipe-item 
-      *ngFor="let recipeItem of recipes" 
-      [recipe]="recipeItem" 
-      (launchRecipe)="setRecipe($event)">
+    <app-recipe-item
+      *ngFor="let recipeItem of recipes"
+      [recipe]="recipeItem">
     </app-recipe-item>
 </div>
