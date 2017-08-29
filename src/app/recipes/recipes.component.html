@@ -3,10 +3,6 @@
     <app-recipe-list></app-recipe-list>
   </div>
   <div class="col-md-7">
-    <app-recipe-detail *ngIf="importRecipe; else infoText" [inRecipe]="importRecipe"></app-recipe-detail>
-    <ng-template #infoText>
-      <p>Please, select a repice!</p>
-    </ng-template>
+    <router-outlet></router-outlet>
   </div>
 </div>
-<!--[inRecipe]="importRecipe"-->
